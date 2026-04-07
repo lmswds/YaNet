@@ -44,7 +44,7 @@ const args =
     ? $arguments
     : {
       enable: true,
-      ruleSet: 'openai;ads;google;games;japan',  // 【个人】按需启用，避免加载全部规则集
+      ruleSet: 'openai;ads;google;japan',  // 【个人】按需启用，避免加载全部规则集
       regionSet: 'all',
       excludeHighPercentage: true,
       globalRatioLimit: 2,
@@ -575,6 +575,8 @@ const serviceConfigs = [
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png',
     url: 'https://r.r10s.jp/com/img/home/logo/touch.png',
     rules: [
+      'GEOSITE,dmm,日本网站',
+      'GEOSITE,dlsite,日本网站',
       'RULE-SET,category-bank-jp,日本网站',
       'GEOIP,jp,日本网站,no-resolve',
     ],
