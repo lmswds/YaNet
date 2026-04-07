@@ -7,10 +7,10 @@
 // ============================================================
 // 【个人自定义配置区域】
 // 修改此处的 URL 为你 fork 仓库中 custom_rules.list 的 raw 地址
-// 格式：https://raw.githubusercontent.com/<用户名>/YaNet/main/Mihomo/custom_rules.list
+// 格式：https://raw.githubusercontent.com/lmswds/YaNet/main/Mihomo/custom_rules.list
 // ============================================================
 const CUSTOM_RULES_URL =
-  'https://raw.githubusercontent.com/<YOUR_GITHUB_USERNAME>/YaNet/main/Mihomo/custom_rules.list'
+  'https://raw.githubusercontent.com/lmswds/YaNet/main/Mihomo/custom_rules.list'
 
 
 function stringToArray(val) {
@@ -43,21 +43,21 @@ const args =
   typeof $arguments !== 'undefined'
     ? $arguments
     : {
-        enable: true,
-        ruleSet: 'openai;ads;google;games;japan',  // 【个人】按需启用，避免加载全部规则集
-        regionSet: 'all',
-        excludeHighPercentage: true,
-        globalRatioLimit: 2,
-        skipIps: _skipIps,
-        defaultDNS: _chinaIpDns,
-        directDNS: _chinaIpDns,
-        chinaDNS: _chinaDohDns,
-        foreignDNS: _foreignDohDns,
-        mode: 'default',
-        ipv6: false,
-        logLevel: 'error',
-        githubProxy: 'https://ghfast.top/',
-      }
+      enable: true,
+      ruleSet: 'openai;ads;google;games;japan',  // 【个人】按需启用，避免加载全部规则集
+      regionSet: 'all',
+      excludeHighPercentage: true,
+      globalRatioLimit: 2,
+      skipIps: _skipIps,
+      defaultDNS: _chinaIpDns,
+      directDNS: _chinaIpDns,
+      chinaDNS: _chinaDohDns,
+      foreignDNS: _foreignDohDns,
+      mode: 'default',
+      ipv6: false,
+      logLevel: 'error',
+      githubProxy: 'https://ghfast.top/',
+    }
 
 /**
  * 如果是直接在软件中粘贴脚本的，就手动修改下面这几个变量实现自定义配置
@@ -706,10 +706,10 @@ function main(config) {
   const regionGroups = {}
   regionDefinitions.forEach(
     (r) =>
-      (regionGroups[r.name] = {
-        ...r,
-        proxies: [],
-      })
+    (regionGroups[r.name] = {
+      ...r,
+      proxies: [],
+    })
   )
   const otherProxies = []
 
