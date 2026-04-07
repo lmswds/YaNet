@@ -1,0 +1,21 @@
+# 自定义直连规则 (Custom Direct Rules)
+# 格式：Classical (Clash/Mihomo rule-provider 格式)
+# 说明：此文件由 global_script.js 通过 rule-providers 动态加载
+
+# ---------- 域名后缀 ----------
+DOMAIN-SUFFIX,ssv2.coxpan.com,DIRECT
+DOMAIN-SUFFIX,chatboxai.app,DIRECT
+DOMAIN-SUFFIX,0daydown.com,DIRECT
+
+# ---------- 域名关键词 ----------
+DOMAIN-KEYWORD,feemoo,DIRECT
+DOMAIN-KEYWORD,flyint,DIRECT
+
+# ---------- 进程名 ----------
+PROCESS-NAME,eternaltree.exe,DIRECT
+PROCESS-NAME,qbittorrent.exe,DIRECT
+PROCESS-NAME,GrilsFrontLine.exe,DIRECT
+PROCESS-NAME,aria2c_x64.exe,DIRECT
+
+# ---------- localhost ----------
+DOMAIN,localhost,DIRECT

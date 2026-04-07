@@ -4,6 +4,15 @@
  * Github：https://github.com/dahaha-365/YaNet
  */
 
+// ============================================================
+// 【个人自定义配置区域】
+// 修改此处的 URL 为你 fork 仓库中 custom_rules.list 的 raw 地址
+// 格式：https://raw.githubusercontent.com/<用户名>/YaNet/main/Mihomo/custom_rules.list
+// ============================================================
+const CUSTOM_RULES_URL =
+  'https://raw.githubusercontent.com/<YOUR_GITHUB_USERNAME>/YaNet/main/Mihomo/custom_rules.list'
+
+
 function stringToArray(val) {
   if (Array.isArray(val)) return val
   if (typeof val !== 'string') return []
@@ -35,7 +44,7 @@ const args =
     ? $arguments
     : {
         enable: true,
-        ruleSet: 'all',
+        ruleSet: 'openai;ads;google;games;japan',  // 【个人】按需启用，避免加载全部规则集
         regionSet: 'all',
         excludeHighPercentage: true,
         globalRatioLimit: 2,
@@ -158,6 +167,8 @@ if (ruleSet === 'all') {
 
 // 初始规则
 const rules = [
+  // 【个人自定义规则集】必须放在最前面，优先级最高
+  'RULE-SET,custom-direct,直连',
   'RULE-SET,applications,下载软件',
   'PROCESS-NAME-REGEX,(?i).*Oray.*,直连',
   'PROCESS-NAME-REGEX,(?i).*Sunlogin.*,直连',
@@ -338,6 +349,14 @@ const ruleProviders = {
     format: 'text',
     url: 'https://github.com/DustinWin/ruleset_geodata/raw/refs/heads/mihomo-ruleset/applications.list',
     path: './ruleset/DustinWin/applications.list',
+  },
+  // 【个人自定义规则集】加载远程 custom_rules.list，统一管理直连规则
+  'custom-direct': {
+    ...ruleProviderCommon,
+    behavior: 'classical',
+    format: 'text',
+    url: CUSTOM_RULES_URL,
+    path: './ruleset/custom/custom_rules.list',
   },
 }
 
