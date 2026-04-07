@@ -206,67 +206,67 @@ const rules = [
 const allRegionDefinitions = [
   {
     name: 'HK香港',
-    regex: /港|🇭🇰|hk|hongkong|hong kong/i,
+    regex: /🇭🇰|(?<!深|沪|广|京|杭|中)港|hk|hongkong/i,
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png',
   },
   {
     name: 'US美国',
-    regex: /(?!.*aus)(?=.*(美|🇺🇸|us(?!t)|usa|american|united states)).*/i,
+    regex: /(?!.*aus)(?=.*(🇺🇸|美|us(?!t)|usa|american|united states)).*/i,
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png',
   },
   {
     name: 'JP日本',
-    regex: /日本|🇯🇵|jp|japan/i,
+    regex: /🇯🇵|日本|jp|japan/i,
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png',
   },
   {
     name: 'KR韩国',
-    regex: /韩|🇰🇷|kr|korea/i,
+    regex: /🇰🇷|韩|kr|korea/i,
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png',
   },
   {
     name: 'SG新加坡',
-    regex: /新加坡|🇸🇬|sg|singapore/i,
+    regex: /🇸🇬|新加坡|sg|singapore/i,
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png',
   },
   {
     name: 'CN中国大陆',
-    regex: /中国|🇨🇳|cn|china/i,
+    regex: /🇨🇳|中国|cn|china/i,
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png',
   },
   {
     name: 'TW台湾省',
-    regex: /台湾|台灣|🇹🇼|tw|taiwan|tai wan/i,
+    regex: /🇹🇼|台湾|台灣|tw|taiwan|tai wan/i,
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png',
   },
   {
     name: 'GB英国',
-    regex: /英|🇬🇧|uk|united kingdom|great britain/i,
+    regex: /🇬🇧|英|uk|united kingdom|great britain/i,
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Kingdom.png',
   },
   {
     name: 'DE德国',
-    regex: /德国|🇩🇪|de|germany/i,
+    regex: /🇩🇪|德国|de|germany/i,
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Germany.png',
   },
   {
     name: 'MY马来西亚',
-    regex: /马来|🇲🇾|my|malaysia/i,
+    regex: /🇲🇾|马来|my|malaysia/i,
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Malaysia.png',
   },
   {
-    name: 'TK土耳其',
-    regex: /土耳其|🇹🇷|tk|turkey/i,
+    name: 'TR土耳其',
+    regex: /🇹🇷|土耳其|tr|turkey/i,
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Turkey.png',
   },
   {
     name: 'CA加拿大',
-    regex: /加拿大|🇨🇦|ca|canada/i,
+    regex: /🇨🇦|加拿大|ca|canada/i,
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Canada.png',
   },
   {
     name: 'AU澳大利亚',
-    regex: /澳大利亚|🇦🇺|au|australia|sydney/i,
+    regex: /🇦🇺|澳大利亚|au|australia|sydney/i,
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Australia.png',
   },
 ]
