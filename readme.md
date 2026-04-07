@@ -7,7 +7,7 @@
 订阅 `personal` 分支（包含个人定制内容）：
 
 ```
-(https://fastly.jsdelivr.net/gh/lmswds/YaNet@personal/Mihomo/global_script.js
+https://fastly.jsdelivr.net/gh/lmswds/YaNet@personal/Mihomo/global_script.js
 ```
 
 ## 分支说明
