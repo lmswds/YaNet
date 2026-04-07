@@ -1,13 +1,4 @@
 # Yet another Internet
 
-这里没有你想要的东西，只有我自己喜欢的东西。
+根据[dahaha-365/YaNet](https://github.com/dahaha-365/YaNet)修改的自用规则，添加了一些网址和进程
 
-Mihomo 全局覆写脚本支持[在SubStore中使用](https://yanet.vip/blog/2ivre320/)了！
-
-## 机场推荐
-
-| 名称                                  | 描述                                                                  |
-|-------------------------------------|---------------------------------------------------------------------|
-| [西部数据](https://s.yanet.vip/L3Yaij)  | 流媒体和 GPT 解锁，国内 BGP 多入口中转，IPLC 国际线路，20元/月 200G 起，有限速，不限客户端数量         |
-| [青云梯](https://s.yanet.vip/oHxxEb)   | 流媒体和 GPT 解锁，全 IPLC 专线，最大提供 2.5GBPs 速率，96元/年 60G/月起，无限速，不限客户端数量      |
-| [M78星云](https://s.yanet.vip/qqDI8m) | 流媒体和 GPT 解锁，有 IEPL 专线，最大提供 2GBPs 速率，12.8元/月 150G起，不限客户端数量，有 EMBY 服务 |
